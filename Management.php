@@ -72,9 +72,9 @@ class Management
 
             // Get the user from the position
             $user = $this->queue[$start];
-            // var_dump($user);
+
             $user->setPosition($end);
-            // var_dump($start);
+
             // Remove the user from the position
             array_splice($this->queue, $start, 1);
 
